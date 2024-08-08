@@ -1,0 +1,410 @@
+*{ margin : 0; padding: 0 ; box-sizing:  border-box;font-family: "Montserrat", sans-serif;
+  
+} 
+
+
+
+.site-headers{ 
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(57deg , #00c6a7 , #1e4d92);
+    clip-path: polygon(0% 0% , 100% 0% , 100% 80% , 0% 100% );
+
+}
+ nav{ 
+   width: 100% ; 
+   height: 100px ; 
+   display: flex;
+   color: white;
+}
+.logo{ 
+    width:50%;
+    height: 100px;
+}
+.logo h1{ 
+    line-height: 100px;
+    padding-left: 50px;
+
+ }
+
+ .menu{ 
+    width: 50%;
+    height: 100px;
+
+ }
+
+ .menu ul{ 
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+ } 
+
+ .menu ul li { 
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+ }
+ section { 
+    display: flex;
+ }
+
+ .Leftside{ 
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+
+ }
+
+ .Leftside img{
+    width: 600px;
+    height: 500px;
+
+ }
+.Rightside{ 
+    width: 55%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    padding: 40px;
+
+}
+
+.Rightside h1{
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.Rightside p{
+    font-size: 1.1rem;
+    padding: 30px 0;
+}
+
+
+.Rightside button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg , #00c6a7 , #1e4d92);
+    border-radius: 4px;
+    padding: 20px 35px;
+}
+
+.Rightside button:hover {
+     background: linear-gradient(57deg ,#1e4d92 ,  #00c6a7 ); 
+
+}
+.body-card {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background:#efefef;*/
+   background: linear-gradient(57deg , #00c6a7 , #1e4d92);
+   
+}
+
+.body-card :hover{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1120px;
+    width: 100%; 
+    padding: 40px 0 ;
+}
+
+
+
+#header1{
+
+    margin: 5%;
+    margin-left: 20%;
+}
+
+#slider {
+
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+}
+
+#slider ul{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition : all 750ms ease;
+    left: 0;
+}
+
+
+#slider ul li{
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+#slider ul li img{
+    width: 1000px;
+    height: 600px;
+}
+
+
+
+
+#slider #prev,
+#slider #next{
+    width: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-shadow: 0  0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+}
+
+#slider #prev{
+    left: 10px;
+
+}
+#slider #next{
+    right: 10px;
+
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+}
+
+
+
+
+
+
+.card {
+   
+      background: white;
+      background: #f4f0f0;
+    border-radius: 8px ;
+}
+.card .image-box{ 
+    height: 200px;
+   
+
+}
+.card .image-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0 ;
+   
+}
+
+
+.card .profile-details{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+   
+}
+
+.card .profile-details img{
+   height: 40px;
+   width: 40px; 
+   border-radius: 50%;
+}
+.profile-details .name{
+    font-size: 15px;
+    font-weight: 500;
+   
+
+}
+
+.profile-details .job{
+    font-size: 12px;
+    font-weight: 800;
+    color: #4d4d4d;
+
+   
+}
+.sideContainer { 
+    margin: 0 30px;
+    overflow: hidden;
+
+}
+.swiper-navBtn { 
+    color: black;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+ 
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet { 
+    background-color: #0000;
+}
+@media  screen and (min-width: 768px) {
+
+    
+}
+
+
+.btn{
+   margin-top: 20px;
+   padding: 5px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #1E90FF;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-property: box-shadow , tranform;
+    transition-property: box-shadow , transform;
+}
+
+.btn:hover , .btn:focus , .btn:active{
+    box-shadow: 0 0 20px  rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+footer{
+    background-color: #111;
+}
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px ;
+
+}
+
+.socialIcons{
+    display : flex;
+    justify-content: center;
+}
+
+.socialIcons a{ 
+   text-decoration: none;
+   padding: 10px;
+   background-color: white;
+   margin: 10px;
+   border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+    
+}
+
+
+/* Hover Effects on Social Media*/
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+ 
+.socialIcons a:hover{
+    color: white;
+    transition: 0.5s;
+
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerBottom{
+    background-color: #0000;
+    padding: 20px;
+    text-align: center;
+
+}
+.footerBottom p{
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 700px){
+      .footerNav ul{
+        flex-direction: column;
+      }
+      .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+      }
+}
+
+
